@@ -98,7 +98,7 @@ function renderScrollMotion(now){
   const opening=ease((barProgress-.05)/.87);
   panels.forEach((panel,i)=>{
     const direction=i===0?-1:1;
-    panel.style.transform=`translate3d(${direction*opening*103}%,0,0)`;
+    panel.style.transform=`translate3d(${direction*opening*65}%,0,0)`;
     panel.querySelector('img').style.transform=`translate3d(${direction*(1-opening)*3}%,0,0) scale(${1.28-opening*.28})`;
   });
   barHeading.style.transform=`translateY(${(1-opening)*40}px) scale(${.85+opening*.15})`;
